@@ -1,5 +1,27 @@
 PODS:
   - boost (1.84.0)
+  - DdkRn (0.2.6):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - uniffi-bindgen-react-native (= 0.29.3-1)
+    - Yoga
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.75.5)
   - fmt (9.1.0)
@@ -1498,10 +1520,13 @@ PODS:
     - React-perflogger (= 0.75.5)
     - React-utils (= 0.75.5)
   - SocketRocket (0.7.0)
+  - uniffi-bindgen-react-native (0.29.3-1):
+    - React-Core
   - Yoga (0.0.0)
 
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
+  - "DdkRn (from `../node_modules/@bennyblader/ddk-rn`)"
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - fmt (from `../node_modules/react-native/third-party-podspecs/fmt.podspec`)
@@ -1569,10 +1594,13 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - SocketRocket
+    - uniffi-bindgen-react-native
 
 EXTERNAL SOURCES:
   boost:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
+  DdkRn:
+    :path: "../node_modules/@bennyblader/ddk-rn"
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   FBLazyVector:
@@ -1699,6 +1727,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost: 4cb898d0bf20404aab1850c656dcea009429d6c1
+  DdkRn: edb04ff472f160f751641fbf7b5a8d89776b7ee1
   DoubleConversion: 76ab83afb40bddeeee456813d9c04f67f78771b5
   FBLazyVector: ee328dc37246cbe6d45ae4472951c0ca0dd6ffbf
   fmt: 4c2741a687cc09f0634a2e2c72a838b99f1ff120
@@ -1757,9 +1786,10 @@ SPEC CHECKSUMS:
   React-RuntimeHermes: 777c37c304fd3fcfd63e6c970a7a9700c89811e9
   React-runtimescheduler: 248cb0c1304b6b4dd46d2a9d1f3ebcf76ec8eea3
   React-utils: 40f04d50cc917b80d5f829e48635a273a7e5a0c1
-  ReactCodegen: c672218d62eee3026615eeec882d862395e61cd8
+  ReactCodegen: ff35e6ec3580ba0c2bc4d522b7f081351d541b67
   ReactCommon: c5f4dfc5a41d58a8013df370cf733de9782c7659
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
+  uniffi-bindgen-react-native: 125eae9e3a0cf34bf8f3d4b0ceed517df7cc0733
   Yoga: 5acecc29c9413933d57c9a26bc236fd0279bacb4
 
 PODFILE CHECKSUM: 63755ee72af03a3b944efd8d4739e31d7ca6ab6b
